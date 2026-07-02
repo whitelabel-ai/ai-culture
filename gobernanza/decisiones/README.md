@@ -23,5 +23,6 @@ No requieren DR: decisiones reversibles de bajo impacto, elecciones técnicas lo
 | DR | Título | Estado |
 |---|---|---|
 | [DR-0001](DR-0001-docs-as-code-fuente-de-verdad.md) | La cultura vive en un repo de código como fuente de verdad | Aceptado |
+| [DR-0002](DR-0002-docsify-como-capa-de-visualizacion.md) | Docsify como capa de visualización del repo, con navegación autogenerada | Aceptado |
 
 **Mantenimiento**: todo DR nuevo se añade a este índice en el mismo PR.

@@ -1,2 +1,3 @@
 # Tooling local
 .atl/
+node_modules/

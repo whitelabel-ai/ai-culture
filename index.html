@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cultura AI-First</title>
+  <meta name="description" content="Documentación viva de la cultura AI-First: manifiesto, modelo operativo, playbooks y gobernanza." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css" />
+  <style>
+    :root { --theme-color: #6b3fa0; }
+    .markdown-section { max-width: 880px; }
+    .markdown-section table { display: table; width: 100%; }
+    .app-name-link img { display: none; }
+  </style>
+</head>
+<body>
+  <div id="app">Cargando cultura AI-First…</div>
+  <script>
+    // Cuando exista un remoto en GitHub, añade su URL en `repo` para mostrar
+    // el enlace "Ver en GitHub" en la esquina del sitio.
+    window.$docsify = {
+      name: 'Cultura AI-First',
+      repo: '',
+      loadSidebar: true,
+      loadNavbar: false,
+      subMaxLevel: 0,
+      auto2top: true,
+      alias: {
+        // Fuerza que TODAS las rutas usen el _sidebar.md de la raíz,
+        // en vez de buscar uno distinto por carpeta (comportamiento por
+        // defecto de Docsify).
+        '/.*/_sidebar.md': '/_sidebar.md',
+      },
+      formatUpdated: '{MM}/{DD}/{YYYY}',
+      search: {
+        maxAge: 86400000,
+        paths: 'auto',
+        placeholder: 'Buscar en la cultura AI-First…',
+        noData: 'Sin resultados.',
+        depth: 6,
+      },
+      copyCode: {
+        buttonText: 'Copiar',
+        errorText: 'Error',
+        successText: 'Copiado',
+      },
+      pagination: {
+        previousText: 'Anterior',
+        nextText: 'Siguiente',
+        crossChapter: true,
+      },
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-pagination@2/dist/docsify-pagination.min.js"></script>
+</body>
+</html>

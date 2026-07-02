@@ -4,7 +4,7 @@ Este repositorio es la fuente de verdad de la cultura AI-First de la organizaci�
 
 ## Qué es este repo
 
-- Documentación viva de cultura, modelo operativo, playbooks y gobernanza. **No contiene código de aplicación.**
+- Documentación viva de cultura, modelo operativo, playbooks y gobernanza. **No contiene código de producto.** Única excepción: la capa mínima para navegar el repo como sitio (`index.html`, `_sidebar.md`, `scripts/generate-sidebar.mjs`) — es la vitrina de esta misma documentación, no un producto (ver [DR-0002](gobernanza/decisiones/DR-0002-docsify-como-capa-de-visualizacion.md)).
 - Todo está en Markdown, en español, un concepto por archivo.
 - La estructura de carpetas es semántica: el path de un archivo indica su dominio (`playbooks/ingenieria.md` = cómo trabaja ingeniería).
 
@@ -24,6 +24,7 @@ Este repositorio es la fuente de verdad de la cultura AI-First de la organizaci�
 - **Decisiones**: todo cambio que altere un principio, un nivel de autonomía o una política de gobernanza requiere un Decision Record nuevo en [gobernanza/decisiones/](gobernanza/decisiones/) usando [la plantilla](gobernanza/decisiones/plantilla.md). No edites DRs aceptados: escribe uno nuevo que los reemplace.
 - **Commits**: conventional commits (`docs:`, `feat:`, `fix:`). Sin atribución de IA ni Co-Authored-By.
 - **Evidencia**: las afirmaciones cuantitativas (métricas, porcentajes) deben citar su fuente en [research/](research/) o enlazar la fuente externa.
+- **Documento nuevo → navegación automática**: al agregar, mover o renombrar un `.md`, corre `npm run docs:sidebar` (o `node scripts/generate-sidebar.mjs`) antes de abrir el PR para que aparezca en el menú del sitio. Si lo olvidas, el workflow de CI lo regenera solo en el push a `main` — pero en local verás el menú desactualizado hasta correrlo.
 
 ## Qué NO hacer
 

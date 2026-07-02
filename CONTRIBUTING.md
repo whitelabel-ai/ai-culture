@@ -6,8 +6,9 @@ Este repositorio evoluciona como el código: por Pull Request, con revisión. Cu
 
 1. Crea una rama: `git checkout -b docs/lo-que-cambias`.
 2. Edita siguiendo las reglas de escritura de abajo.
-3. Abre un PR explicando el porqué (no solo el qué).
-4. Un revisor humano aprueba. Cambios de fondo (principios, límites, niveles de autonomía) requieren además un [Decision Record](gobernanza/decisiones/).
+3. Si agregaste, moviste o renombraste un documento, corre `npm run docs:sidebar` para actualizar la navegación del sitio.
+4. Abre un PR explicando el porqué (no solo el qué).
+5. Un revisor humano aprueba. Cambios de fondo (principios, límites, niveles de autonomía) requieren además un [Decision Record](gobernanza/decisiones/).
 
 ## Reglas de escritura
 
@@ -39,5 +40,6 @@ El revisor verifica:
 - [ ] ¿Duplica contenido que ya vive en otro doc? (enlazar, no duplicar)
 - [ ] ¿Usa el vocabulario del glosario de forma consistente?
 - [ ] ¿Un agente que lea SOLO este doc sacaría la conclusión correcta?
+- [ ] Si hay documentos nuevos o movidos, ¿corrió `npm run docs:sidebar`?
 
 Esa última pregunta es la prueba definitiva: escribimos para el humano que llega y para la IA que ejecuta.

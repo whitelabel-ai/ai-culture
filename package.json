@@ -1,0 +1,9 @@
+{
+  "name": "ai-first-culture",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "docs:sidebar": "node scripts/generate-sidebar.mjs",
+    "docs:serve": "npx docsify-cli serve ."
+  }
+}
