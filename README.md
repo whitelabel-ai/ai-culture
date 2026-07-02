@@ -30,7 +30,7 @@ Vive en un repo de código por una razón deliberada: **lo que está en el repo 
 Este repo también se navega como un sitio web — no hace falta clonarlo ni saber Git para leerlo cómodo.
 
 - **En local**: `npx docsify-cli serve .` desde la raíz, y abre `http://localhost:3000`.
-- **En línea**: una vez publicado en GitHub Pages, la URL queda disponible para todo el equipo sin instalar nada. Ver [DR-0002](gobernanza/decisiones/DR-0002-docsify-como-capa-de-visualizacion.md).
+- **En línea**: [whitelabel-ai.github.io/ai-culture](https://whitelabel-ai.github.io/ai-culture/) — disponible para todo el equipo sin instalar nada, en cuanto un admin del repo active GitHub Pages (Settings → Pages → Deploy from branch `main` / `root`). Ver [DR-0002](gobernanza/decisiones/DR-0002-docsify-como-capa-de-visualizacion.md).
 
 La navegación (`_sidebar.md`) se regenera sola: [scripts/generate-sidebar.mjs](scripts/generate-sidebar.mjs) escanea todos los `.md` del repo y arma el menú. Corre automáticamente en cada push a `main` vía [GitHub Actions](.github/workflows/docs.yml); en local, ejecútalo a mano con `npm run docs:sidebar` antes de hacer commit de un documento nuevo.
 
